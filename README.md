@@ -1,2 +1,3 @@
-# Reastuarant-page
-A dynamically rendered Restuarant Page
+# Restaurant-page
+
+A dynamically rendered Restaurant Page
