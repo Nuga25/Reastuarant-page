@@ -2,6 +2,7 @@
 import "./styles.css";
 import pageLoad from "./pageLoad.js";
 import menuPage from "./menu.js";
+import aboutPage from "./about.js";
 
 console.log("yayyy this works");
 
@@ -31,5 +32,5 @@ aboutBtn.addEventListener("click", () => {
   divContent.textContent = "";
   document.querySelector(".logo").textContent = "";
 
-  //menuPage();
+  aboutPage();
 });

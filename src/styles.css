@@ -8,6 +8,7 @@ html,
 body {
   height: 100vh;
   width: 100%;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 nav {
@@ -19,12 +20,51 @@ nav {
   border-bottom: 1px solid #000;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  width: 90px;
+  height: 40px;
+  margin: 10px;
+  background-color: #000;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+}
+
+.checkMenuBtn {
+  width: 180px;
+  height: 45px;
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
 .pageLoadDiv {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   padding: 60px;
 }
 
@@ -36,32 +76,103 @@ nav {
 .pageLoadDivBox2 {
   width: 50%;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .boldText {
-  font-size: 68px;
+  font-size: 50px;
+  padding: 10px 0;
+}
+
+.lilIntroText {
+  padding: 10px 0;
+  font-size: 18px;
 }
 
 /* MENU PAGE */
 .menuIntroText {
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+  font-size: 35px;
+}
+
+.menuIntroText2 {
+  text-align: center;
+  font-size: 19px;
 }
 
 .mainMenuDiv {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 30px;
 }
 
 .menuDiv {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 30px;
+  gap: 40px;
+  padding: 20px;
 }
 
 .menuItem {
   border: 1px solid #000;
+  border-radius: 30px 0 30px 0;
+  width: 400px;
+  height: 360px;
+}
+
+.foodName {
+  margin-top: 30px;
+  padding: 5px;
+}
+
+.foodDescription {
+  padding: 5px;
+}
+
+.foodImage {
+  border-radius: 30px 0 0 0;
+}
+
+/* ABOUT PAGE */
+.aboutDivContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.aboutDiv {
+  width: 30%;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 30px 0 30px 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.aboutIntroText {
+  text-align: center;
+  padding: 0 10px 10px 10px;
+  font-size: 40px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #000;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+}
+
+.footerText {
+  text-decoration: none;
+  color: #fff;
 }
